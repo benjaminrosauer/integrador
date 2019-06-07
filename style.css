@@ -2,25 +2,15 @@
   box-sizing: border-box;
 }
 
-section.section-movies {
-  text-align: center;
-  padding: 5% 0;
-  background-image:linear-gradient(to bottom,rgb(206, 209, 208),#97dc3e);
+body{
+  background-color: grey;
+  color: white;
+}
 
-}
-section.section-movies h2.subtitle-products{
-	font-size: 2.5rem;
-}
-section.section-movies h2.title-product {
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 26px;
-	width: 80%;
-	text-align: center;
-	margin: auto;
-}
-section.section-movies img {
-  max-width: 100%;
-}
-article.article-products{
+
+.peliculas{
+  float: left;
+  margin-left: 6%;
+  position: relative;
   margin-top: 10%;
 }
