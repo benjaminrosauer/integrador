@@ -14,3 +14,132 @@ body{
   position: relative;
   margin-top: 10%;
 }
+body {
+  margin: 0;
+  background-color: #444;
+  font-family: monospace;
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin:0 auto;
+}
+
+.logo{
+  float: left;
+  width: 55px;
+  height: 55px;
+  padding-top: 10px 0;
+}
+
+header {
+  background-color: white;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 75px;
+  padding-top: 25px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+nav a:hover{
+  color: :#000
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #000;
+
+  position: absolute;
+  top: 0;
+  width:0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+.Searchbar {
+  position: absolute;
+  top: 3%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background: green;             acaaaaaaaaaaaaaaa
+  height: 40px;
+  border-radius: 30px;
+  padding: 9px
+
+}
+
+.Searchbar:hover > .searchtext{
+  width: 240px;
+  padding: 0 6px;
+  color: white;
+}
+
+.Searchbar:hover > .searchbtn{
+background: white;
+}
+
+.searchbtn{
+  color: #800000;
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.searchtext {
+background: none;
+border: none;
+float: left;
+outline: none;
+padding: 0;
+color: white;
+font-size: 16px;
+transition: 0.5s;
+line-height: 40px;
+width: 0;
+}
+
+.i {
+  float: left;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.logo{
+  width: 80px;
+}
