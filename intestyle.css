@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(fotos/1fondo.jpg);
+}
+
+.Menu{
+  height:100%;
+  width:20%;
+  position:fixed!important;z-index:1;overflow:auto
+  important;background-color:black;!important
+  overflow: hidden;
+   }
+
+.Titulo{
+     color:white;
+     text-align: center;
+     font-family: monospace;
+     font-size: 40px;
+     height: 16.6%;
+
+
+   }
+
+.Links{
+  float: left;
+  text-decoration: none;
+  width:100%;
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+  height: 16.6%;
+   }
+
+
+.Superior{
+  margin-left: 20%;
+  width: 80%;
+  background-color: black;
+  height: 8.3%;
+  font-size: 10px;
+  position:relative;z-index:1;overflow:auto
+}
+
+ h1{
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  font-size: 100px;
+  margin: 0;
+}
+
+.logo{
+  position: relative;
+  bottom: 80px;
+  left: 100px;
+}
+
+.estrella{
+  position: absolute;
+  z-index: 1;
+  left: 110px;
+  bottom: 60px;
+}
+.flecha{
+  position: absolute;
+  z-index: 1;
+  left: 120px;
+  bottom: 200px;
+}
+.mascara{
+  position: absolute;
+  z-index: 1;
+  left: 100px;
+  bottom: 350px;
+}
+.destacados{
+  position: absolute;
+  z-index: 1;
+  left: 140px;
+  bottom: 500px;
+}
+.casa{
+  position: absolute;
+  z-index: 1;
+  left: 135px;
+  bottom: 630px;
+}
+
+.menu{
+  position: absolute;
+  z-index: 1;
+  left: 120px;
+  bottom: 720px;
+}
