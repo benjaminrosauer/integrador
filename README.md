@@ -1,3 +1,0 @@
-# integrador
-innerHTML\
-bocaaaaaa
