@@ -32,6 +32,11 @@ fetch(url)
       let favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies")) || [];
       if(favoriteMovies.indexOf(id) === -1){
         output +=
+      <div class="peliculas">
+        <div class="overlay">
+        <div class="addBtn">
+          <span>
+            <i class=
       }
       }
   })
