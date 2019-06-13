@@ -1,3 +1,7 @@
+@font-face {
+  src: url(fonts/barselona.ttf);
+  font-family: barca;
+}
 *{
   box-sizing: border-box;
 }
@@ -16,7 +20,7 @@ body{
 }
 body {
   margin: 0;
-  background-color: #444;
+  background-color: black;
   font-family: monospace;
   font-weight: 300;
 }
@@ -24,6 +28,7 @@ body {
 .container {
   width: 80%;
   margin:0 auto;
+  height: 80px;
 }
 
 .logo{
@@ -61,13 +66,15 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #000;
-  text-transform: uppercase;
+  color:black;
+  text-transform: ;
   font-size: 16px;
+  font-family: barca;
 }
 
 nav a:hover{
-  color: :#000
+  color: :#000;
+  text-decoration: none;
 }
 
 nav a::before{
@@ -80,18 +87,20 @@ nav a::before{
   top: 0;
   width:0%;
   transition: all ease-in-out 250ms;
+  text-decoration: none;
 }
 
 nav a:hover::before{
   width: 100%;
+  text-decoration: none;
 }
 
 .Searchbar {
   position: absolute;
-  top: 3%;
-  left: 35%;
+  top: 7%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  background: green;             acaaaaaaaaaaaaaaa
+  background:black;             acaaaaaaaaaaaaaaa
   height: 40px;
   border-radius: 30px;
   padding: 9px
@@ -131,6 +140,7 @@ font-size: 16px;
 transition: 0.5s;
 line-height: 40px;
 width: 0;
+font-family: barca;
 }
 
 .i {
@@ -141,5 +151,6 @@ width: 0;
 }
 
 .logo{
-  width: 80px;
+margin-top: 10px;
+
 }
