@@ -13,15 +13,20 @@
     				id = JSON.stringify(id);
     				let favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies")) || [];
     				if(favoriteMovies.indexOf(id) === -1){
+              let estrellas = '';
+              for (var j = 1; j < movie[i].vote_average; j++) {
+                estrellas = estrellas + "<ion-icon class='animated flash infinite' name='star'></ion-icon>"
+              }
+
     					output += `
     					<div class="peliculas">
     						<div class="overlay">
     						<div class="addBtn">
-    						<span><i class="material-icons favorite" onclick="favorite('${movie[i].id}')">favorite</i></span></div>
+    						<span><i class="material-icons favorite"><ion-icon class="vacio" name="heart-empty"></ion-icon><ion-icon class="lleno ocultar" name="heart"></ion-icon></i></span></div>
     						<div class="movie">
     							<h2>${movie[i].title}</h2>
-    								<p id="p_rating"><strong>Rating:</strong> <span>${movie[i].vote_average} / 10 </span> </p>
-    								<p><strong>Release date:</strong> <span>${movie[i].release_date} <i class="material-icons date">date_range</i> </span></p>
+    								<p id="p_rating"><strong>Rating:</strong> <span>${movie[i].vote_average} ` + estrellas + `</span> </p>
+    								<p><strong>Release date:</strong> <span>${movie[i].release_date} <i class="material-icons date"></i> </span></p>
     								<a onclick="movieSelected('${movie[i].id}')" href="#">Detalles</a>
     						</div>
     						</div>
@@ -40,7 +45,7 @@
     						<h2>${movie[i].title}</h2>
     							<p id="p_rating"><strong>Rating:</strong> <span>${movie[i].vote_average} / 10 </span> </p>
     							<p><strong>Release date:</strong> <span>${movie[i].release_date} <i class="material-icons date">date_range</i> </span></p>
-    							<a onclick="movieSelected('${movie[i].id}')" href="#">DEtalles</a>
+    							<a onclick="movieSelected('${movie[i].id}')" href="#">Detalles</a>
     					</div>
     					</div>
     					<div class="peliculas_img">
@@ -55,9 +60,18 @@
     			movieInfo.innerHTML = output;
 
 
+
     		})
     		// If theres an error, logs the error in console.
     		.catch( (err) =>{
     			console.log(err);
     		})
-        
+
+
+let vacios = document.getElementsByClassName("vacio");
+let llenos = document.getElementsByClassName("lleno");
+
+
+vacios.forEach(function(e){
+  console.log(e);
+})

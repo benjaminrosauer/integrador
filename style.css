@@ -40,6 +40,7 @@ body {
 
 header {
   background-color: white;
+
 }
 
 header::after {
@@ -152,5 +153,43 @@ font-family: barca;
 
 .logo{
 margin-top: 10px;
+
+}
+.movie h2{ font-family: barca;
+
+
+}
+.movie h2:hover{
+transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+.mostrar{
+  display: run-in;
+}
+.ocultar{
+  display: none;
+}
+
+
+.addBtn{
+color: #DB020D;
+position: absolute;
+top: 160px;
+font-size: 40px;\
+
+}
+
+.movie a{
+  font-family: barca;
+color: #DB020D;
+}
+.movie strong{
+  font-family: barca;
+  color: #DB020D;
+}
+.movie p{
+  color: yellow;
+  font-family: barca;
 
 }
