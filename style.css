@@ -193,3 +193,12 @@ color: #DB020D;
   font-family: barca;
 
 }
+
+
+/* CSS FOOTER*/
+ div .footer{
+
+  width: 1000px;
+
+  color: red;
+}
