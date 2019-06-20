@@ -68,7 +68,7 @@
     		})
 
 
-let vacios = document.getElementsByClassName("vacio");
+let vacios = document.getElementsByClassName("vacio"); // If theres an error, logs the error in console.
 let llenos = document.getElementsByClassName("lleno");
 
 
