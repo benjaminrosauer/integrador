@@ -70,8 +70,3 @@
 
 let vacios = document.getElementsByClassName("vacio"); // If theres an error, logs the error in console.
 let llenos = document.getElementsByClassName("lleno");
-
-
-vacios.forEach(function(e){
-  console.log(e);
-})
