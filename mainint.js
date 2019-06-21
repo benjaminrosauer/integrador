@@ -11,12 +11,15 @@
     			for(let i = 0; i < movie.length; i++){
     				let id = response.results[i].id;
     				id = JSON.stringify(id);
+            console.log(id);
     				let favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies")) || [];
+            let titleMovies = JSON.parse(localStorage.getItem("titleMovies")) || [];
     				if(favoriteMovies.indexOf(id) === -1){
               let estrellas = '';
               for (var j = 1; j < movie[i].vote_average; j++) {
                 estrellas = estrellas + "<ion-icon class='animated flash infinite' name='star'></ion-icon>"
               }
+
 
     					output += `
     					<div class="peliculas">
