@@ -196,22 +196,23 @@ color: #DB020D;
 
 .middle {
   position: absolute;
-  top: 50%;
+  top: 82%;
   transform: translate(-50%);
   width: 100%;
   text-align: center;
-  left:50%;
+  left:52%;
+top: 60%;
 }
 
 .btn {
   display: inline-block;
   width: 90px;
   height: 90px;
-  background: #f1f1f1;
+  background:#DB2923 ;
   margin: 10px;
   border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070
-  color: #e74c3c;
+  box-shadow: 0 5px 15px -5px black;
+  color: white;
   overflow: hidden;
   position: relative;
 }
@@ -220,6 +221,10 @@ color: #DB020D;
 line-height: 90px;
 font-size: 26px;
 transition: 0.2s linear;
+z-index: 1;
+position: absolute;
+right: 31px;
+
 }
 
 .btn:hover i{
@@ -232,7 +237,7 @@ transition: 0.2s linear;
   position: absolute;
   width: 120%;
   height: 120%;
-  background: #e74c3c;
+  background: #DB2923;
   transform: rotate(45deg);
   left: -110%
   top: 90%
@@ -251,11 +256,25 @@ transition: 0.2s linear;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-transform: full-width;
-    text-align: center;
-    left: 95px;
+    left: 2px;
   }
 
   .bienvenida2{
-    font-family:  'Quicksand', sans-serif;
-    text-align: center;
+    font-family:  'Quicksand', sans-serif;\
+    left: 300px;
   }
+
+.GIF{
+position: absolute;
+top: 98px;
+left: 300px;
+z-index: -1;
+}
+
+.introduccion{
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  right: 300px;
+  top: 98px;
+}
