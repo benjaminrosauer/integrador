@@ -247,8 +247,10 @@ transition: 0.2s linear;
 
 
   .bienvenida{
-    font-family:'Quicksand', sans-serif;
+    font-family:barca;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    text-transform: full-width;
     text-align: center;
     left: 95px;
   }
