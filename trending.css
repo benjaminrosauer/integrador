@@ -196,9 +196,33 @@ color: #DB020D;
 
 
 /* CSS FOOTER*/
- div .footer{
+.footer{
+    clear: both;
+    position: relative;
+    height: 8%;
+    margin-top: -200px;
+    background-color: white;
+    color: black;
+    font-family: barca;
+  }
 
-  width: 1000px;
+.nombes{
+  width: 50%;
+}
 
-  color: red;
+.fotofooter{
+  width: 65px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+.logofooter{
+  width: 4%;
+  position: absolute;
+  top: 0px;
+  left: 52%;
+}
+.titulofooter{
+  text-align: center;
+
 }

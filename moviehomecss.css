@@ -278,3 +278,35 @@ z-index: -1;
   right: 300px;
   top: 98px;
 }
+
+.footer{
+    clear: both;
+    position: fixed;
+    height: 8%;
+    margin-top: 700px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-family: barca;
+  }
+
+.nombes{
+  width: 50%;
+}
+
+.fotofooter{
+  width: 65px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+.logofooter{
+  width: 4%;
+  position: absolute;
+  top: 0px;
+  left: 52%;
+}
+.titulofooter{
+  text-align: center;
+
+}
