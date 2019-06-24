@@ -198,14 +198,12 @@ color: #DB020D;
 /* CSS FOOTER*/
 .footer{
     clear: both;
-    position: fixed;
+    position: relative;
     height: 8%;
-    margin-top: 246px;
-    width: 100%;
+    margin-top: -200px;
     background-color: white;
     color: black;
     font-family: barca;
-
   }
 
 .nombes{

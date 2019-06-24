@@ -1,3 +1,4 @@
+
 @font-face {
   src: url(fonts/barselona.ttf);
   font-family: barca;
@@ -193,20 +194,21 @@ color: #DB020D;
   font-family: barca;
 
 }
+ .carru{
 
+ }
 
 /* CSS FOOTER*/
-.footer{
-    clear: both;
-    position: fixed;
-    height: 8%;
-    margin-top: 246px;
-    width: 100%;
-    background-color: white;
-    color: black;
-    font-family: barca;
-
-  }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  background-color: white;
+  color: black;
+  font-family: barca;
+}
 
 .nombes{
   width: 50%;

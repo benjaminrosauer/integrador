@@ -2,7 +2,6 @@
   src: url(fonts/barselona.ttf);
   font-family: barca;
 }
-
 *{
   box-sizing: border-box;
 }
@@ -41,6 +40,7 @@ body {
 
 header {
   background-color: white;
+  
 
 }
 
@@ -99,8 +99,8 @@ nav a:hover::before{
 
 .Searchbar {
   position: absolute;
-  top: 7%;
-  left: 30%;
+  top: 5%;
+  left: 40%;
   transform: translate(-50%, -50%);
   background:black;             acaaaaaaaaaaaaaaa
   height: 40px;
@@ -129,6 +129,7 @@ background: white;
   display: flex;
   align-items: center;
   transition: 0.5s;
+
 }
 
 .searchtext {
@@ -158,6 +159,7 @@ margin-top: 10px;
 }
 .movie h2{
 font-family: barca;
+font-size: 25px;
 }
 .movie h2:hover{
 transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -191,21 +193,16 @@ color: #DB020D;
 .movie p{
   color: yellow;
   font-family: barca;
-
 }
-
-
 /* CSS FOOTER*/
 .footer{
     clear: both;
-    position: fixed;
+    position: relative;
     height: 8%;
-    margin-top: 246px;
-    width: 100%;
+    margin-top: 700px;
     background-color: white;
     color: black;
     font-family: barca;
-
   }
 
 .nombes{
