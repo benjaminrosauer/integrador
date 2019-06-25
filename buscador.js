@@ -15,7 +15,7 @@ fetch(url)
     //Guardo el array de peliculas
     var arrayDePeliculas = objetoLiteralRespuesta.results
     //Capturo el ul
-    var ul = document.querySelector('section ul')
+    var ul = document.querySelector('div#movies')
 
 
     var li = ""
@@ -25,7 +25,7 @@ fetch(url)
     var titulo = "${movie[i].title}"
     for (var i = 0; i < arrayDePeliculas.length; i++){
       li = "<li>"
-      li += "<a href= 'detalles.html?idPelicula="+arrayDePeliculas[i].id+"'>"
+      li += "<a href= 'detalles.html?IdDePeliculas="+arrayDePeliculas[i].id+"'>"
       li += "<img src='"+urlImg + arrayDePeliculas[i].poster_path+"' style='width:300px;'>"
       li += "</a>"
       li += "</li>"

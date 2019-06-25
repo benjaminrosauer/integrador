@@ -27,8 +27,13 @@ window.addEventListener("load",function(){
        })
        .then(function(objetoLiteralTrailer) {
          console.log(objetoLiteralTrailer);
-         var key = objetoLiteralTrailer.results[0].key
-         var trailer = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ key +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+         if (objetoLiteralTrailer.results.length > 0) {
+           var key = objetoLiteralTrailer.results[0].key
+           var trailer = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ key +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+         } else {
+           var trailer = ""
+         }
 
          fetch("https://api.themoviedb.org/3/movie/" + objetoLiteralPelicula.id  + "/recommendations?api_key=8fe7ed2a38151374ac57c4c5cd8d8a01&language=en-US&page=1")
            .then(function(response) {
