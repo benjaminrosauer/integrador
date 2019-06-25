@@ -2,97 +2,76 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/uikit-rtl.css">
-    <link rel="stylesheet" href="css/uikit-rtl.min.css">
-    <link rel="stylesheet" href="css/uikit.css">
-    <link rel="stylesheet" href="css/uikit.min.css">
-
-    <link rel="stylesheet" href="genres.css">
     <title></title>
+
+
+    <link rel="stylesheet" href="css/nuevo.css">
+    <link rel="stylesheet" href="css/bootstrapnuevo.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
 
   </head>
   <body>
-    <header>
-      <li>
-        <form class="Searchbar" action="buscador.html" method="get">
-          <input id="input-buscador" type="search" name="buscador" placeholder="type to search">
-          <a class="searchbtn"href="#"></a>
-          <i class="fas fa-search"></i>
-        </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img src="fotos/food.png" alt="logo" class="logo" style  ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="nuevo.html">Home <span class="sr-only">(current)</span></a>
       </li>
-
-<div class="container">
-<a href="integrador.html"><img src="fotos/food.png" alt="logo" class="logo"  ></a>
-  <nav>
+      <li class="nav-item">
+        <a class="nav-link" href="popular.html">Popular</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="upcoming.html">Upcoming</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Genres</a>
+      </li>
+    </ul>
     <ul>
-<li><a href="moviehome.html">Home</a> </li>
-<li><a href="trending.html">Trending</a> </li>
-<li> <a href="genres.html">Genres</a> </li>
-<li><a href="integrador.html">Upcoming</a> </li>
-    </ul>
-  </nav>
-</div>
-</header>
-
-<div class="Peliculas">
-  <div id="movies" class="filaDePeliculas"> </div>
-</div>
-
-<section id="products" class="section-movies">
-
-
-</section>
-
-
-
-  <div class=" carru uk-position-relative uk-visible-toggle uk-light" tabindex="23" uk-slider>
-
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-1@s uk-child-width-1-1@m">
-        <li>
-            <img src="fotos/carrusel1.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>.</h1></div>
+        <li class="li">
+<form class="form-inline my-2 my-lg-0" action="buscador.html" method="get">
+  <input id=" form-control mr-sm-2" type="search" name="buscador" placeholder="type to search">
+  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+  <a class="searchbtn"href="#"></a>
+  <i class="fas fa-search"></i>
+</form>
         </li>
-        <li>
-            <img src="fotos/carrusel2.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>YAHNI</h1></div>
-        </li>
-        <li>
-            <img src="fotos/carrusel3.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1>SOS</h1></div>
-        </li>
-        <li>
-            <img src="fotos/carrusel4.jpg" alt="">
-            <div class="uk-position-center uk-panel"><h1></h1></div>
-        </li>
-
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-</div>
-
-<ul id="listadoGeneros">
-
 </ul>
 
+<h2 class="title" action="buscador.html" method="">
+
+</h2>
 
 
 
+  </div>
+</nav>
+<div class="container">
+  <div id="movies" class="row"></div>
 
- <!--FOOTER-->
+  </div>
 
- <div class="footer">
-    <p class="nombres">Benjamin Rosauer - Felix Galperin - Nicolas Yahni</p>
-    <img src="fotos/moviedb.jpg" alt="fotofooter" class="fotofooter">
-    <img src="fotos/food.png" alt="logofooter" class="logofooter">
-    <div class="titulofooter">
-        <p>MOVIEIT</p>
-    </div>
- </div>
-
+</div>
   </body>
+
 </html>
-<script type="text/javascript" src="genres.js"></script>
-<script src="js/uikit.js"></script>
-<script src="js/uikit.min.js"></script>
+
+<script  src="javascript/genres.js">
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="javascript/buscador.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.9-1/dist/ionicons.js"></script>
+  <script src="javascript/uikit-icons.min.js"></script>
+  <script src="javascript/buscador.js"></script>
+  <link rel="stylesheet" href="css/animate.css">

@@ -1,4 +1,6 @@
-
+#recomenda img{
+  width: 100%;
+}
 
 #movies img{
   width: 100%;
@@ -29,3 +31,8 @@ h4{
 h6{
 font-family:'Cairo', sans-serif;
 text-transform: uppercase;
+}
+.carru uk-position-relative uk-visible-toggle uk-light{
+
+  width: 50%;
+}
