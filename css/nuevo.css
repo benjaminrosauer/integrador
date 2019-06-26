@@ -47,3 +47,12 @@ text-transform: uppercase;
 
   width: 50%;
 }
+.buscador{
+  float: right;
+  position: absolute;
+  right: 100px;
+}
+
+.navbar-collapse{
+
+}
