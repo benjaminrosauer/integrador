@@ -40,7 +40,6 @@ body {
 
 header {
   background-color: white;
-  
 
 }
 
@@ -193,17 +192,11 @@ color: #DB020D;
 .movie p{
   color: yellow;
   font-family: barca;
+
 }
+
+
 /* CSS FOOTER*/
-.footer{
-    clear: both;
-    position: relative;
-    height: 8%;
-    margin-top: 700px;
-    background-color: white;
-    color: black;
-    font-family: barca;
-  }
 
 .nombes{
   width: 50%;
@@ -223,5 +216,13 @@ color: #DB020D;
 }
 .titulofooter{
   text-align: center;
-
 }
+.footer{
+    clear: both;
+    position: relative;
+    height: 8%;
+    margin-top: -200px;
+    background-color: white;
+    color: black;
+    font-family: barca;
+  }

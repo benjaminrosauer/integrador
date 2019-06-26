@@ -16,6 +16,7 @@ if(username.length>0 && email.length>0 && sex.length>0 ){
   sessionStorage.setItem("Sex", sex );
   sessionStorage.getItem("Sex");
 
+
 }
 else{
   console.log("no data");

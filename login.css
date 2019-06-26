@@ -67,6 +67,23 @@ border-color: #DB020D;
   background:  #DB020D;
 }
 
+.Me{
+  position: absolute;
+  left: 232px;
+  background-color: white;
+  font-family: sans-serif;
+}
+.Wom{
+  position: absolute;
+  left: 232px;
+  background-color: white;
+}
+.Ot{
+  position: absolute;
+  left: 232px;
+  background-color: white;
+}
+
 .contenido-bloqueado {
   background-color: black;
   color: white;
