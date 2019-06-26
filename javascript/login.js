@@ -27,6 +27,4 @@ var bloqueado = document.querySelector(".dos")
   bloqueado.style.display = "block"
 
 }
-
-
 })

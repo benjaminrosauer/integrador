@@ -91,6 +91,7 @@ window.addEventListener("load",function(){
                        <li class="list-group-item"><strong>Language:</strong> ${objetoLiteralPelicula.original_language}</li>
                        <li class="list-group-item"><strong>Tagline:</strong> ${objetoLiteralPelicula.tagline}</li>
                        <li class="list-group-item"><strong>Overview:</strong> ${objetoLiteralPelicula.overview}</li>
+                       <li class="list-group-item"><button onclick="agregarFav(${objetoLiteralPelicula.id})">Agregar a favoritos</button></li>
 
                      </ul>
                    </div>
@@ -128,4 +129,18 @@ if (username.length>0) {
   usernameh2.innerHTML = "Bienvenido <span>" + username + "</span>";
   var usernameh2 = document.querySelector(".login")
   usernameh2.style.display = "none"
+}
+
+function agregarFav(id) {
+if (sessionStorage.getItem("Movies") == null) {
+  var favorita = []
+  favorita.push(id)
+  window.localStorage.setItem('Movies', JSON.stringify(favorita));
+}
+else {
+  JSON.parse(window.localStorage.setItem('Movies'));
+  favorita.push(id)
+  
+}
+  sessionStorage.setItem("Movies", id)
 }
