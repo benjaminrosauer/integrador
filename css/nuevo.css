@@ -114,8 +114,17 @@ span.navbar-toggler-icon {
 
     width: 100%;
   }
+  .buscador {
+      float:none;
+      position: relative;
+      right: 0;
+      top: 0;
+  }
+  .form-inline {
+    justify-content: center;
+  }
+}
 
-  
 li a{
   text-align:center;
   text-transform: uppercase;

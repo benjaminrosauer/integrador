@@ -66,7 +66,7 @@ window.addEventListener("load",function(){
                      <ul class="list-group">
 
                        <li class="list-group-item"><strong>Birthday:</strong> ${objetoLiteralActor.birthday}</li>
-                       <li class="list-group-item"><strong>Also Known As:</strong> ${objetoLiteralActor.also_known_as}</li>
+                       <li class="list-group-item"><strong>Place Of Birth:</strong> ${objetoLiteralActor.place_of_birth}</li>
                        <li class="list-group-item"><strong>Popularity:</strong> ${objetoLiteralActor.popularity}</li>
                        <li class="list-group-item"><strong>Biography:</strong> ${objetoLiteralActor.biography}</li>
 

@@ -56,7 +56,7 @@ window.addEventListener("load",function(){
                <img src="http://image.tmdb.org/t/p/w400/${recomendadas[i].poster_path}" onerror="this.onerror=null;this.src='../images/imageNotFound.png';">
                <h4>${recomendadas[i].title}</h4>
 
-               <a onclick= "movieSelected('${recomendadas[i].id}')"  class= " btn btn-primary" href="detalles.html?IdDePeliculas=${recomendadas[i].id}"> Movie Details</a>
+               <a   class= " btn btn-primary" href="detalles.html?IdDePeliculas=${recomendadas[i].id}"> Movie Details</a>
 
 
                </div>
@@ -91,7 +91,7 @@ window.addEventListener("load",function(){
                        <li class="list-group-item"><strong>Language:</strong> ${objetoLiteralPelicula.original_language}</li>
                        <li class="list-group-item"><strong>Tagline:</strong> ${objetoLiteralPelicula.tagline}</li>
                        <li class="list-group-item"><strong>Overview:</strong> ${objetoLiteralPelicula.overview}</li>
-                       <li class="list-group-item"><button onclick="agregarFav(${objetoLiteralPelicula.id})">Agregar a favoritos</button></li>
+                       <li class="list-group-item"><button class= "fav" onclick="agregarFav(${objetoLiteralPelicula.id})">Add to favorites </button></li>
                       <li class="list-group-item"><strong></strong> ${trailer}</li>
                      </ul>
                    </div>
@@ -124,23 +124,23 @@ window.addEventListener("load",function(){
 
 var username = sessionStorage.getItem("Username");
 console.log(username)
-if (username.length>0) {
+if (username != null && username.length>0) {
   var usernameh2 = document.querySelector(".logeado")
   usernameh2.innerHTML = "Bienvenido <span>" + username + "</span>";
   var usernameh2 = document.querySelector(".login")
   usernameh2.style.display = "none"
 }
 
-function agregarFav(id) {
-if (sessionStorage.getItem("Movies") == null) {
-  var favorita = []
-  favorita.push(id)
-  window.localStorage.setItem('Movies', JSON.stringify(favorita));
-}
-else {
-  JSON.parse(window.localStorage.setItem('Movies'));
-  favorita.push(id)
-
-}
-  sessionStorage.setItem("Movies", id)
-}
+// function agregarFav(id) {
+// if (sessionStorage.getItem("Movies") == null) {
+//   var favorita = []
+//   favorita.push(id)
+//   window.localStorage.setItem('Movies', JSON.stringify(favorita));
+// }
+// else {
+//   JSON.parse(window.localStorage.setItem('Movies'));
+//   favorita.push(id)
+//
+// }
+//   sessionStorage.setItem("Movies", id)
+// }
