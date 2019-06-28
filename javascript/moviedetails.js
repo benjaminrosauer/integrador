@@ -18,7 +18,9 @@ window.addEventListener("load",function(){
         var name = objetoLiteralPelicula.genres[i].name;
        console.log(name);
        console.log(id);
-        genero += "<a href='tiposdegeneros.html'>"+  name +  "</a>";
+
+
+        genero += "<a href='tiposdegeneros.html?idDeGenero="+id+"&genero="+name+"'>"+  name +  "</a>";
       console.log(genero);
      }
   fetch("https://api.themoviedb.org/3/movie/" + objetoLiteralPelicula.id + "/videos?api_key=8fe7ed2a38151374ac57c4c5cd8d8a01&language=en-US")
