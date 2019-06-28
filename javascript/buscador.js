@@ -14,7 +14,7 @@ fetch(url)
     //Guardo el array de peliculas
     var arrayDePeliculas = objetoLiteralRespuesta.results
     //Capturo el ul
-    var ul = document.querySelector('section ul')
+    var ul = document.querySelector('#resultados')
 
 
     var li = ""

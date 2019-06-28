@@ -11,7 +11,7 @@ window.addEventListener("load",function(){
     })
     .then(function(objetoLiteralPelicula) {
       console.log(objetoLiteralPelicula);
-     let output = "";
+     var output = "";
      var genero = "";
      for(var i = 0; i < objetoLiteralPelicula.genres.length; i++){
         var id = objetoLiteralPelicula.genres[i].id;
@@ -44,9 +44,9 @@ window.addEventListener("load",function(){
              console.log(response);
              console.log(response.results);
              var recomendadas = response.results;
-             let output = "";
-             for(let i = 0; i < recomendadas.length; i++){
-               let id = response.results[i].id;
+            var output = "";
+             for(var i = 0; i < recomendadas.length; i++){
+              var id = response.results[i].id;
                id = JSON.stringify(id);
                console.log(id);
                output += `
@@ -64,7 +64,7 @@ window.addEventListener("load",function(){
                `
 
 
-                 let movieInfo = document.getElementById("recomenda");
+                var movieInfo = document.getElementById("recomenda");
                  movieInfo.innerHTML = output;
 
              }
@@ -92,11 +92,11 @@ window.addEventListener("load",function(){
                        <li class="list-group-item"><strong>Tagline:</strong> ${objetoLiteralPelicula.tagline}</li>
                        <li class="list-group-item"><strong>Overview:</strong> ${objetoLiteralPelicula.overview}</li>
                        <li class="list-group-item"><button onclick="agregarFav(${objetoLiteralPelicula.id})">Agregar a favoritos</button></li>
-
+                      <li class="list-group-item"><strong></strong> ${trailer}</li>
                      </ul>
                    </div>
                  </div>
-                  <div > ${trailer}</div>
+
 
 
          `;
@@ -104,7 +104,7 @@ window.addEventListener("load",function(){
 
 
        // Display movies.
-       let movieInfo = document.getElementById("movies");
+      var movieInfo = document.getElementById("movies");
        movieInfo.innerHTML = output;
 
        })
@@ -140,7 +140,7 @@ if (sessionStorage.getItem("Movies") == null) {
 else {
   JSON.parse(window.localStorage.setItem('Movies'));
   favorita.push(id)
-  
+
 }
   sessionStorage.setItem("Movies", id)
 }

@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrapnuevo.css">
     <link rel="stylesheet" href="css/nuevo.css">
     <title></title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="fotos/food.png" alt="logo" class="logo" style  ></a>
+  <a class="navbar-brand" href="nuevo.html"><img src="fotos/food.png" alt="logo" class="logo" style  ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -29,7 +29,7 @@
         <a class="nav-link" href="actors.html">Popular Actors</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="actors.html">Genres</a>
+        <a class="nav-link" href="generos.html">Genres</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="favoritos.html">Favorites</a>
@@ -37,6 +37,7 @@
       <li class="nav-item">
         <a class="nav-link login" href="login.html">Log In</a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link logeado"></a>
       </li>
@@ -44,7 +45,7 @@
     <ul>
   </nav>
   <div class="container">
-    <div id="movies" class="row"></div>
+    <div id="resultados" class="row"></div>
 
     </div>
 
@@ -57,8 +58,22 @@
 
      <!--FOOTER-->
 
+     <footer class="footer">
+       <table class="table table-hover">
+         <thead>
+           <tr>
+             <th scope="col"><img src="fotos/download.png" alt="logo" class="logo" style  ></th>
+             <th scope="col">Benjamin Rosauer</th>
+             <th scope="col">Nicolas Yahni</th>
+             <th scope="col">Felix Galperin</th>
+           </tr>
+         </thead>
 
+     </footer>
   </body>
 </html>
 
-<script type="text/javascript" src="buscador.js"></script>
+<script src="javascript/buscador.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

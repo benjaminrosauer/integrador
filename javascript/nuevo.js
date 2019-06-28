@@ -6,17 +6,15 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=8fe7ed2a38151374ac57
   .then(function  (response) {
     console.log(response);
     console.log(response.results);
-    let movie = response.results;
-    let output = "";
-    for(let i = 0; i < movie.length; i++){
-      let id = response.results[i].id;
+    var movie = response.results;
+    var output = "";
+    for(var i = 0; i < movie.length; i++){
+      var id = response.results[i].id;
       id = JSON.stringify(id);
       console.log(id);
 
-      let favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies")) || [];
-      let titleMovies = JSON.parse(localStorage.getItem("titleMovies")) || [];
-      if(favoriteMovies.indexOf(id) === -1){
-        let estrellas = '';
+    {
+        var estrellas = '';
         for (var j = 1; j < movie[i].vote_average; j++) {
           estrellas = estrellas + "<ion-icon class='animated flash infinite' name='star'></ion-icon>"
         }
@@ -24,7 +22,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=8fe7ed2a38151374ac57
 
         output += `
 
-        <div class="col-md-3">
+        <div class="col-md-3 ">
 
         <div class="well text-center">
 
@@ -40,7 +38,7 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=8fe7ed2a38151374ac57
       }
     }
     // Display movies.
-    let movieInfo = document.getElementById("movies");
+    var movieInfo = document.getElementById("movies");
     movieInfo.innerHTML = output;
 
 
@@ -52,31 +50,12 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=8fe7ed2a38151374ac57
   })
 
 
-let vacios = document.getElementsByClassName("vacio"); // If theres an error, logs the error in console.
-let llenos = document.getElementsByClassName("lleno");
+var vacios = document.getElementsByClassName("vacio"); // If theres an error, logs the error in console.
+var llenos = document.getElementsByClassName("lleno");
 
 
-// function movieSelected(id) {
-//
-//   sessionStorage.setItem('movieId', id);
-//   window.location = 'movie.html';
-//   return false;
-// }
-//
-// function holaPelicula ( ){
-//
-//   let movieId= sessionStorage.getItem('movieId');
-//   axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=8fe7ed2a38151374ac57c4c5cd8d8a01&language=en-US&page=1')
-//   .then((response)=>{
-//     console.log(response);
-//     let movie = response.overview;
-//     let output =
-//     '<div class="row"> <div class="col-md-4">   <img src="http://image.tmdb.org/t/p/w400/${movie[i].poster_path}" </div> <div class="col-md-8"></div></div> ';
-//     let movieInfo = document.getElementById("movie");
-//     movieInfo.innerHTML = output;
-//   })
-//
-// }
+
+
 
 var username = sessionStorage.getItem("Username");
 console.log(username)

@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-
-
+      <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/nuevo.css">
     <link rel="stylesheet" href="css/bootstrapnuevo.css">
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img src="fotos/food.png" alt="logo" class="logo" style  ></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand" href="nuevo.html"><img src="fotos/food.png" alt="logo" class="logo" style  ></a>
+  <button class="navbar-toggler dropdown-header" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -33,11 +33,9 @@
         <a class="nav-link" href="actors.html">Popular Actors</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="actors.html">Genres</a>
+        <a class="nav-link" href="generos.html">Genres</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="detalles.html">Details</a>
-      </li>
+
       <li class="nav-item">
         <a class="nav-link" href="favoritos.html">Favorites</a>
       </li>
@@ -52,8 +50,8 @@
 
     <ul>
         <li class="li">
-<form class="buscador" action="buscador.html" method="get">
-  <input id=" form-control mr-sm-2" type="search" name="buscador" placeholder="type to search">
+<form class="buscador form-inline my-2 my-lg-0" action="buscador.html" method="get">
+  <input class=" form-control mr-sm-2" type="search" name="buscador" placeholder="Type to search">
   <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
   <a class="searchbtn"href="#"></a>
   <i class="fas fa-search"></i>
@@ -61,9 +59,6 @@
         </li>
 </ul>
 
-<h2 class="title" action="buscador.html" method="">
-
-</h2>
 
 
 
@@ -74,6 +69,7 @@
 
   </div>
   <div class="container">
+    <h3>RECOMMENDED</h3>
   <div id="recomenda" class="row"></div>
 
   </div>
@@ -81,6 +77,18 @@
 
 
 </div>
+<footer class="footer">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col"><img src="fotos/download.png" alt="logo" class="logo" style  ></th>
+        <th scope="col">Benjamin Rosauer</th>
+        <th scope="col">Nicolas Yahni</th>
+        <th scope="col">Felix Galperin</th>
+      </tr>
+    </thead>
+
+</footer>
   </body>
 
 </html>
@@ -97,4 +105,7 @@
   <script src="https://unpkg.com/ionicons@4.5.9-1/dist/ionicons.js"></script>
   <script src="javascript/uikit-icons.min.js"></script>
   <script src="javascript/buscador.js"></script>
-  <link rel="stylesheet" href="css/animate.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

@@ -7,8 +7,8 @@ fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=8fe7ed2a38151374ac5
     console.log(response);
     var genero = response.genres;
     var output = "";
-    for(let i = 0; i < genero.length; i++){
-      let id = response.genres[i].id;
+    for(var i = 0; i < genero.length; i++){
+      var id = response.genres[i].id;
       id = JSON.stringify(id);
       console.log(id);
 
@@ -31,7 +31,7 @@ fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=8fe7ed2a38151374ac5
         console.log(genero[i].id);
       }
 
-    let movieInfo = document.getElementById("generos");
+    var movieInfo = document.getElementById("generos");
     movieInfo.innerHTML = output;
 
 
@@ -42,6 +42,5 @@ fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=8fe7ed2a38151374ac5
   })
 
 
-let vacios = document.getElementsByClassName("vacio"); // If theres an error, logs the error in console.
-let llenos = document.getElementsByClassName("lleno");
+
 })

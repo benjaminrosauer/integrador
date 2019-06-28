@@ -11,7 +11,7 @@ window.addEventListener("load",function(){
     })
     .then(function(objetoLiteralActor) {
       console.log(objetoLiteralActor);
-     let output = "";
+      var output = "";
      var genero = "";
 
      fetch("https://api.themoviedb.org/3/person/" + objetoLiteralActor.id  + "/movie_credits?api_key=8fe7ed2a38151374ac57c4c5cd8d8a01&language=en-US&page=1")
@@ -23,9 +23,9 @@ window.addEventListener("load",function(){
          console.log(response);
          console.log(response.results);
          var credits = response.results;
-         let output = "";
-         for(let i = 0; i < response.length; i++){
-           let id = response.results[i].id;
+         var output = "";
+         for(var i = 0; i < response.length; i++){
+           var id = response.results[i].id;
            id = JSON.stringify(id);
            console.log(id);
            output += `
@@ -43,7 +43,7 @@ window.addEventListener("load",function(){
            `
 
 
-             let movieInfo = document.getElementById("credits");
+             var movieInfo = document.getElementById("credits");
              movieInfo.innerHTML = output;
 
          }

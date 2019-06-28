@@ -5,16 +5,14 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=8fe7ed2a38151374ac57c4
   .then(function(response) {
     console.log(response);
     console.log(response.results);
-    let movie = response.results;
-    let output = "";
-    for(let i = 0; i < movie.length; i++){
-      let id = response.results[i].id;
+    var movie = response.results;
+    var output = "";
+    for(var i = 0; i < movie.length; i++){
+      var id = response.results[i].id;
       id = JSON.stringify(id);
       console.log(id);
-      let favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies")) || [];
-      let titleMovies = JSON.parse(localStorage.getItem("titleMovies")) || [];
-      if(favoriteMovies.indexOf(id) === -1){
-        let estrellas = '';
+    {
+        var estrellas = '';
         for (var j = 1; j < movie[i].vote_average; j++) {
           estrellas = estrellas + "<ion-icon class='animated flash infinite' name='star'></ion-icon>"
         }
@@ -36,8 +34,8 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=8fe7ed2a38151374ac57c4
         `;
       }
     }
-    // Display movies.
-    let movieInfo = document.getElementById("movies");
+  
+    var movieInfo = document.getElementById("movies");
     movieInfo.innerHTML = output;
 
 
@@ -48,9 +46,6 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=8fe7ed2a38151374ac57c4
     console.log(err);
   })
 
-
-let vacios = document.getElementsByClassName("vacio"); // If theres an error, logs the error in console.
-let llenos = document.getElementsByClassName("lleno");
 
 var username = sessionStorage.getItem("Username");
 console.log(username)
